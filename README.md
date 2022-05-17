@@ -28,8 +28,7 @@ Install [Node.js](https://nodejs.org/en/) (developed in v16)
 
 ```bash
 git clone https://github.com/Wang-Cankun/scread-frontend-next.git
-cd 
-scread-frontend-next
+cd scread-frontend-next
 ```
 
 Create a `.env` file in project root and put API URL in the env file:
