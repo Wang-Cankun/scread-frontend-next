@@ -1,9 +1,9 @@
 {
-  "name": "scread-frontend-ext",
-  "description": "A new frontend for scread",
+  "name": "scread-frontend-next",
   "private": true,
-  "author": "Cankun Wang",
   "packageManager": "pnpm@7.0.0",
+  "description": "A new frontend for scread",
+  "author": "Cankun Wang",
   "scripts": {
     "build": "vite build",
     "dev": "vite --port 3333 --open",
