@@ -10,7 +10,7 @@ const router = useRouter()
     <p text-sm op50>
       <em>Dynamic route!</em>
     </p>
-
+    {{ $route }}
     <div>
       <button class="btn m-3 text-sm mt-8" @click="router.back()">
         Back

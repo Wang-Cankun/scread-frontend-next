@@ -1,7 +1,10 @@
 <template>
-  <main font-sans p="x-4 y-10" text="center gray-900 dark:gray-200">
-    <router-view />
+  <GlobalTheme font-sans>
+    <Header />
+    <main p="x-4 y-4" min-h-screen text="gray-900">
+      <router-view />
+    </main>
     <Footer />
-  </main>
+  </GlobalTheme>
 </template>
 

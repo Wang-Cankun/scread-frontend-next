@@ -71,7 +71,6 @@ const go = () => {
         About
       </NButton>
     </RouterLink>
-    <div py-4 />
 
     <input
       id="input"
