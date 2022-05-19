@@ -56,4 +56,3 @@ const option = computed<PieSeriesOption>(() => {
   height: 500px;
 }
 </style>
-

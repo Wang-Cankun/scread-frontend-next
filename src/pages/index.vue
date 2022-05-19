@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useRequest } from 'vue-request'
 import { useHead } from '@vueuse/head'
-import EchartsExample from '../components/EchartsExample.vue'
-import { useUserStore } from '~/stores/store'
-import { useCounter } from '~/stores/counter'
+import { useRequest } from 'vue-request'
 
+import EchartsExample from '../components/EchartsExample.vue'
+import { useCounter } from '~/stores/counter'
+import { useUserStore } from '~/stores/store'
 const siteData = reactive({
   title: 'My website title',
   description: 'My beautiful website',
@@ -24,17 +24,24 @@ useHead({
 const user = useUserStore()
 const counter = useCounter()
 const name = $ref(user.savedName)
-const { run: run1, data: data1, loading: loading1 } = useRequest('https://osubmi.com/api/scread/dataset', {
+const {
+  run: run1,
+  data: data1,
+  loading: loading1,
+} = useRequest('https://osubmi.com/api/scread/dataset', {
   cacheKey: 'date',
 })
-const { run: run2, data: data2, loading: loading2 } = useRequest('https://osubmi.com/api/scread/dataset',
-
-)
+const {
+  run: run2,
+  data: data2,
+  loading: loading2,
+} = useRequest('https://osubmi.com/api/scread/dataset')
 const { x, y } = useMouse()
 const router = useRouter()
 const go = () => {
-  if (name)
+  if (name) {
     router.push(`/hi/${encodeURIComponent(name)}`)
+  }
 }
 </script>
 
@@ -51,25 +58,13 @@ const go = () => {
       </a>
     </p>
     <div>pos: {{ x }}, {{ y }}</div>
-    <NButton @click="counter.increment">
-      Increment
-    </NButton>
-    <NButton @click="counter.decrement">
-      Decrement
-    </NButton>
-    <NButton @click="counter.reset">
-      Reset
-    </NButton>
-    <NButton @click="run1">
-      API Loading: {{ loading1 }}
-    </NButton>
-    <NButton @click="run2">
-      API Loading: {{ loading2 }}
-    </NButton>
+    <NButton @click="counter.increment"> Increment </NButton>
+    <NButton @click="counter.decrement"> Decrement </NButton>
+    <NButton @click="counter.reset"> Reset </NButton>
+    <NButton @click="run1"> API Loading: {{ loading1 }} </NButton>
+    <NButton @click="run2"> API Loading: {{ loading2 }} </NButton>
     <RouterLink to="/about">
-      <NButton>
-        About
-      </NButton>
+      <NButton> About </NButton>
     </RouterLink>
 
     <input
@@ -85,12 +80,9 @@ const go = () => {
       border="~ rounded gray-200 dark:gray-700"
       outline="none active:none"
       @keydown.enter="go"
-    >
-
+    />
     <div>
-      <button class="m-3 text-sm btn" :disabled="!name" @click="go">
-        Go
-      </button>
+      <button class="btn m-3 text-sm" :disabled="!name" @click="go">Go</button>
     </div>
     <n-card>
       This is UI card with icon:

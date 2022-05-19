@@ -11,8 +11,8 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import Markdown from 'vite-plugin-md'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
-import Anchor from 'markdown-it-anchor'
-const markdownWrapperClasses = 'prose prose-stone max-w-screen-lg m-auto text-left'
+const markdownWrapperClasses =
+  'prose prose-stone max-w-screen-lg m-auto text-left'
 
 export default defineConfig({
   resolve: {
@@ -33,7 +33,13 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      imports: ['vue', 'vue/macros', 'vue-router', '@vueuse/core', '@vueuse/head'],
+      imports: [
+        'vue',
+        'vue/macros',
+        'vue-router',
+        '@vueuse/core',
+        '@vueuse/head',
+      ],
       dts: true,
     }),
 
@@ -53,7 +59,6 @@ export default defineConfig({
       markdownItSetup(md) {
         // https://prismjs.com/
         md.use(Prism)
-        md.use(Anchor)
         md.use(LinkAttributes, {
           matcher: (link: string) => /^https?:\/\//.test(link),
           attrs: {

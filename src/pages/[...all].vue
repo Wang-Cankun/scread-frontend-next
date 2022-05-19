@@ -1,4 +1,3 @@
 <template>
-  <div>Work in progress </div>
+  <div>Work in progress</div>
 </template>
-

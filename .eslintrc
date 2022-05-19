@@ -1,0 +1,28 @@
+{
+	"ignorePatterns": [
+		"*.md"
+	],
+	"extends": [
+		"@antfu",
+		"@vue/eslint-config-prettier"
+	],
+	"plugins": ["tailwindcss"],
+	"rules": {
+		"indent": [
+			"off",
+			2
+		],
+		"vue/prefer-import-from-vue": "off",
+		"vue/multi-word-component-names": "off",
+		"eslint-disable-next-line": "off",
+		"@typescript-eslint/ban-types": [
+			"error",
+			{
+				"extendDefaults": true,
+				"types": {
+					"{}": false
+				}
+			}
+		]
+	}
+} 

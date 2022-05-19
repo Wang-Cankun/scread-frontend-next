@@ -7,4 +7,3 @@
     <Footer />
   </GlobalTheme>
 </template>
-

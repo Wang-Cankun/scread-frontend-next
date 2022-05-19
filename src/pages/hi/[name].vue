@@ -12,10 +12,7 @@ const router = useRouter()
     </p>
     {{ $route }}
     <div>
-      <button class="btn m-3 text-sm mt-8" @click="router.back()">
-        Back
-      </button>
+      <button class="btn m-3 mt-8 text-sm" @click="router.back()">Back</button>
     </div>
   </div>
 </template>
-
