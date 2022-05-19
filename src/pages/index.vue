@@ -6,7 +6,7 @@ import EchartsExample from '../components/EchartsExample.vue'
 import { useCounter } from '~/stores/counter'
 import { useUserStore } from '~/stores/store'
 const siteData = reactive({
-  title: 'My website title',
+  title: 'scREAD v0.1',
   description: 'My beautiful website',
 })
 
@@ -48,6 +48,7 @@ const go = () => {
 <template>
   <div>
     <div i-carbon-campsite text-4xl inline-block />
+    <div class="i-carbon:3d-ica" />
     <p>
       <a
         rel="noreferrer"
@@ -76,11 +77,11 @@ const go = () => {
 
     <NButton :disabled="!name" @click="go">Go</NButton>
 
-    <n-card>
+    <NCard>
       This is UI card with icon:
       <div i-carbon-search text-2x inline-block />
-      <echarts-example :title="name" :counter="counter.count" />
-    </n-card>
+      <EchartsExample :title="name" :counter="counter.count" />
+    </NCard>
     <p>
       <em text-sm op75>API1: {{ data1 }}</em>
     </p>
