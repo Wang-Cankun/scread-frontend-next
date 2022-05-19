@@ -9,8 +9,7 @@
       {{ new Date().getFullYear() }}
     </span>
     <a
-      class="icon-btn mx-4 mt-3 flex flex-wrap items-start text-base text-gray-500 hover:text-purple-800 sm:mt-0"
-      i-carbon-logo-github
+      class="i-carbon-logo-github icon-btn mx-4 mt-3 flex flex-wrap items-start text-base text-gray-500 hover:text-purple-800 sm:mt-0"
       rel="noreferrer"
       href="https://github.com/Wang-Cankun/scread-frontend-next"
       target="_blank"
