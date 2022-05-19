@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     Header: typeof import('./src/components/layouts/Header.vue')['default']
     NButton: typeof import('naive-ui')['NButton']
     NCard: typeof import('naive-ui')['NCard']
+    NInput: typeof import('naive-ui')['NInput']
     Pie: typeof import('./src/components/chart/Pie.vue')['default']
     README: typeof import('./src/components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

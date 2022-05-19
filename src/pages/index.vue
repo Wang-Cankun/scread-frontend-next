@@ -67,23 +67,15 @@ const go = () => {
       <NButton> About </NButton>
     </RouterLink>
 
-    <input
-      id="input"
-      v-model="name"
-      placeholder="What's your name?"
+    <NInput
+      v-model:value="name"
       type="text"
-      autocomplete="false"
-      p="x-4 y-2"
-      w="250px"
-      text="center"
-      bg="transparent"
-      border="~ rounded gray-200 dark:gray-700"
-      outline="none active:none"
+      placeholder="Basic Input"
       @keydown.enter="go"
     />
-    <div>
-      <button class="btn m-3 text-sm" :disabled="!name" @click="go">Go</button>
-    </div>
+
+    <NButton :disabled="!name" @click="go">Go</NButton>
+
     <n-card>
       This is UI card with icon:
       <div i-carbon-search text-2x inline-block />
