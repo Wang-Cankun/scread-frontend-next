@@ -39,6 +39,7 @@ specifiers:
   unocss: ^0.33.2
   unplugin-auto-import: ^0.7.1
   unplugin-vue-components: ^0.19.5
+  vfonts: ^0.0.3
   vite: ^2.9.8
   vite-plugin-md: ^0.13.1
   vite-plugin-pages: ^0.23.0
@@ -95,6 +96,7 @@ devDependencies:
   unocss: 0.33.2_vite@2.9.8
   unplugin-auto-import: 0.7.1_zx3pfbbc5uei3k4c6zdezegtqm
   unplugin-vue-components: 0.19.5_vite@2.9.8+vue@3.2.33
+  vfonts: 0.0.3
   vite: 2.9.8
   vite-plugin-md: 0.13.1_vite@2.9.8
   vite-plugin-pages: 0.23.0_vite@2.9.8
@@ -4784,6 +4786,10 @@ packages:
     dependencies:
       evtd: 0.2.3
       vue: 3.2.33
+    dev: true
+
+  /vfonts/0.0.3:
+    resolution: {integrity: sha512-nguyw8L6Un8eelg1vQ31vIU2ESxqid7EYmy8V+MDeMaHBqaRSkg3dTBToC1PR00D89UzS/SLkfYPnx0Wf23IQQ==}
     dev: true
 
   /vite-plugin-md/0.13.1_vite@2.9.8:
