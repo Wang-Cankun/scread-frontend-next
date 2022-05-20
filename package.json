@@ -58,6 +58,7 @@
     "unocss": "^0.33.2",
     "unplugin-auto-import": "^0.7.1",
     "unplugin-vue-components": "^0.19.5",
+    "vfonts": "^0.0.3",
     "vite": "^2.9.8",
     "vite-plugin-md": "^0.13.1",
     "vite-plugin-pages": "^0.23.0",

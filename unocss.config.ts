@@ -29,8 +29,8 @@ export default defineConfig({
       warn: true,
     }),
     presetWebFonts({
+      provider: 'none',
       fonts: {
-        // Helvetica Neue / Roboto Flex / 'Segoe UI',
         sans: 'Inter',
         serif: 'Roboto Serif',
         mono: 'Roboto Mono',

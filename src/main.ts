@@ -10,6 +10,7 @@ import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
 import 'echarts'
+import 'vfonts/Inter.css'
 
 const app = createApp(App)
 const head = createHead()
