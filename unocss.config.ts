@@ -29,7 +29,6 @@ export default defineConfig({
       warn: true,
     }),
     presetWebFonts({
-      provider: 'none',
       fonts: {
         sans: 'Inter',
       },
